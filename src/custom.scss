@@ -1,13 +1,54 @@
+.foto {
+  width: 165px;
+}
+
+.nombre-titulo {
+  font-size: 30px !important;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.sidebar {
+  position: fixed;
+  top: 180px;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  z-index: 996;
+  transition: all 0.3s;
+  padding: 20px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #aab7cf transparent;
+  box-shadow: 0px 0px 20px rgba(1, 41, 112, 0.1);
+  background-color: #fff;
+}
+
+.main {
+  margin-top: 180px;
+  padding: 120px 130px;
+  transition: all 0.3s;
+}
+
+.pagetitle {
+  margin-bottom: 10px;
+}
+
+.pagetitle h1 {
+  font-size: 24px;
+  margin-bottom: 0;
+  font-weight: 600;
+  color: #012970;
+}
+
+
+
+// cambiar estilos de bootstrap
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
-
 $primary: #0074d9;
 $danger: #ff4136;
-
 $theme-colors: (
   "primary": $primary,
   "danger": $danger
 );
-
-
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
